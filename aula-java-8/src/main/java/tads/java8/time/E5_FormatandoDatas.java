@@ -2,6 +2,7 @@ package tads.java8.time;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.Locale;
@@ -14,8 +15,8 @@ public class E5_FormatandoDatas {
 		System.out.println(hoje.format(formatador));
 
 		LocalDateTime agora = LocalDateTime.now();
-		formatador = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT)
-									  .withLocale(new Locale("pt", "br"));
+		formatador = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)
+									  .withLocale(new Locale("pt", "br")).withZone(ZoneId.of("America/Sao_Paulo"));
 		System.out.println(agora.format(formatador));
 	}
 }

@@ -7,7 +7,7 @@ import java.time.LocalTime;
 public class E6_ComparandoDatas {
 
 	public static void main(String[] args) {
-		LocalDate anoNovo = LocalDate.of(2014, 1, 1);
+		LocalDate anoNovo = LocalDate.of(2015, 1, 1);
 		LocalDate natal = LocalDate.of(2014, 12, 25);
 
 		System.out.println(anoNovo.isBefore(natal));

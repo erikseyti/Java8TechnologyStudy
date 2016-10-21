@@ -12,6 +12,11 @@ public class E8_TempoEntreDatas {
 		
 		long anos = ChronoUnit.YEARS.between(aniversarioPvai, hoje);
 		System.out.println("Idade Pvai: " + anos);
+		
+		LocalDate aniversarioSampa = LocalDate.of(1554, Month.JANUARY, 25);
+		
+		long anosSampa = ChronoUnit.YEARS.between(aniversarioSampa, hoje);
+		System.out.println("Idade de São Paulo: " + anosSampa);
 	}
 
 }
