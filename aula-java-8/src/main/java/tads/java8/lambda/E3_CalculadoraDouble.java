@@ -7,6 +7,7 @@ public class E3_CalculadoraDouble {
 	static E3_OperadorDouble multiplicacao = (n1, n2) -> n1 * n2;
 	static E3_OperadorDouble divisao = (n1, n2) -> n1 / n2;
 	static E3_OperadorDouble resto = (n1, n2) -> n1 % n2;
+	static E3_OperadorDouble somaQuadrado = (n1,n2)-> (n1*n1) + (n2*n2);
 	
 	public static void main(String[] args) {
 		System.out.println("Resultado da soma: " + soma.aplicar(1, 2));
@@ -14,6 +15,7 @@ public class E3_CalculadoraDouble {
 		System.out.println("Resultado da multiplicacao: " + multiplicacao.aplicar(1, 2));
 		System.out.println("Resultado da divisao: " + divisao.aplicar(1, 2));
 		System.out.println("Resultado do resto: " + resto.aplicar(2, 2));
+		System.out.println("Resultado da soma dos quadrados: "+ somaQuadrado.aplicar(2, 3));
 	}
 
 }
